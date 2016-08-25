@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="spy={firstName:'James',lastName:'Bond'}">
+
+<p>The name is {{ spy.lastName }}, {{ spy.firstName }} {{ spy.lastName }}.</p>
+<p ng-init="decoy={firstName:'Austin',middleName:'Danger',lastName:'Powers'}">Allow myself to introduce... myself. I am {{ decoy.firstName }} "{{ decoy.middleName }}" {{ decoy.lastName }}.</p>
+
+</div>
+
+</body>
+</html>

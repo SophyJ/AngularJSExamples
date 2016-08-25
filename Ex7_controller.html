@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<p>Try to change the names.</p>
+
+<div ng-app="testApp" ng-controller="testCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Middle Name: <input type="text" ng-model="middleName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + middleName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('testApp', []);
+app.controller('testCtrl', function($scope) {
+    $scope.firstName= "Jason";
+	$scope.middleName= "Abigail"
+    $scope.lastName= "Bourne";
+});
+</script>
+
+</body>
+</html>
